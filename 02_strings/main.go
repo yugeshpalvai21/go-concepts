@@ -1,16 +1,30 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
-	// first way to define explicitly
-	var name string = "yugesh"
+	// traditional way of declaration
+	var first_name string = "Yugesh"
+	fmt.Println("First Name", first_name)
 
-	// second way to define without type
-	var location = "IND"
+	// shorthand syntax
+	last_name := "Palvai"
+	fmt.Println(last_name)
 
-	// third way to define dynamically
-	course := "CSE"
+	// length of the string
+	fmt.Println(len(first_name))
 
-	fmt.Println(name, location, course)
+	// convert string to uppercase, lowercase and capitalize
+	fmt.Println(strings.ToUpper(first_name))
+	fmt.Println(strings.ToLower(last_name))
+	fmt.Println(strings.Title(firs_name))
+
+	// string concatenation
+
+	full_name := first_name + " " + last_name
+	fmt.Println(full_name)
+
 }
