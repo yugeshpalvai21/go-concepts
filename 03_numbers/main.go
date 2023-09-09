@@ -6,15 +6,15 @@ func main() {
 	// below are different types of numbers
 
 	// integers (with negative and positives) - int, int8, int16, int32, int64
-	var num1 int= 111
+	var num1 int = 111
 	var num2 int = -121
 
-	num3 := 1100  // shorthand syntax
+	num3 := 1100 // shorthand syntax
 
 	fmt.Printf("%T %T %T\n", num1, num2, num3)
-	
+
 	// rune - alias for int32
-	var num4 rune = 112211
+	num4 := rune(112211)
 	fmt.Printf("%T\n", num4)
 
 	// integers (with only positives) - uint, uint8, uint16, uint32, uint64
@@ -23,12 +23,10 @@ func main() {
 	fmt.Printf("%T\n", num5)
 
 	// byte - alias for uint8
-
-	var num6 byte = 112233
+	var num6 byte = 111
 	fmt.Printf("%T\n", num6)
 
 	// floats (numbers with decimals) - float32, float64
-
 	var num7 float32
 	num7 = 121.121
 	fmt.Printf("%T\n", num7)
@@ -36,7 +34,6 @@ func main() {
 	num8 := float64(1122.1212121)
 	fmt.Printf("%T\n", num8)
 
-	
 	// really large numbers - complex64, complex128
 	num9 := complex64(1 + 2i)
 	num10 := complex128(3 + 4i)
@@ -46,5 +43,5 @@ func main() {
 
 	const pi float32 = 3.1415
 	// pi = 12.1212 => will throw an error
-	fmt.Printf("%T \n", num11)
+	fmt.Printf("%T \n", pi)
 }
